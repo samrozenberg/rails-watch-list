@@ -53,7 +53,6 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 250px;
-  margin: 20px
 }
 
 .card-category a {
@@ -161,11 +160,12 @@
   width: fit-content;
 }
 
-#list_name {
+#list_namee {
   text-decoration: none;
   text-align: center;
 }
 
 #no_decoration {
   text-decoration: none;
+  margin: 20px;
 }

@@ -9,7 +9,7 @@
   <div class="card-product-infos">
     <div class="d-flex justify-content-between align-items-center">
     <h2><%= movie.title %></h2>
-    <%= link_to "🗑", destroy_path(movie.bookmarks[0].id), method: :delete %>
+    <%= link_to "🗑", destroy_path(@bookmark), method: :delete %>
     </div>
     <p> Rating: <%= movie.rating %>  </p>
     <p> Comment: <%= @bookmark.comment %></p>
