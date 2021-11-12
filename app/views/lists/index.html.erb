@@ -1,0 +1,23 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://media.istockphoto.com/photos/family-mother-father-and-children-watching-projector-tv-movies-with-picture-id1176372559?k=20&m=1176372559&s=612x612&w=0&h=vmhX2SrlqGBozTWMluCR8fn4pkh-9AKq5p9DW3q3wc8=);">
+  <div class="container">
+    <h1>Save <strong>all</strong> your movies</strong>!</h1>
+    <p>This is the best platform for movie saving !</p>
+    <%# <%= link_to "Watch your movie list", lists_path, class: "btn btn-primary" %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="d-flex justify-content-between">
+    <h1 class="p-2">My Lists</h1>
+    <%= link_to "Create a New List", new_list_path, class: "btn btn-flat", id: "create_button" %>
+  </div>
+
+  <div class="d-flex flex-wrap justify-content-center">
+    <% @lists.each do |list| %>
+      <div class="card-category p-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.cdn4.stockunlimited.net/preview1300/cinema-background-with-movie-objects_1823382.jpg)">
+      <%= link_to list.name, list_path(list) %>
+      </div>
+    <% end %>
+  </div>
+
+</div>

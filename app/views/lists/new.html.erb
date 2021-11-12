@@ -1,0 +1,13 @@
+<div class="container">
+<h1>Create a new List</h1>
+<%= simple_form_for [@list] do |f| %>
+  <%= f.input :name %>
+  <%= f.submit %>
+  <%= link_to "Cancel", lists_path %>
+<% end %>
+
+</div>
+
+
+
+<%# how to add movies or bookmarks when creating a list ? %>

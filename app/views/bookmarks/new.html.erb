@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Create a new Bookmark</h1>
+  <br>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.association :movie %>
+    <%= f.input :comment %>
+    <%# comment ça peut marcher sans préciser la liste %>
+    <%# comment ajouter le bookmark %>
+    <%# connection entre les 3 models %>
+    <%= f.submit %>
+    <%= link_to "Cancel", list_path(@list) %>
+  <% end %>
+</div>
