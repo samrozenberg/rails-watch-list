@@ -1,13 +1,15 @@
 <div class="container">
-<h1>Create a new List</h1>
-<%= simple_form_for [@list] do |f| %>
-  <%= f.input :name %>
-  <%= f.submit %>
-  <%= link_to "Cancel", lists_path %>
-<% end %>
-
+  <div class="new_item_card p-3">
+    <h1>Create a new List</h1>
+    <%= simple_form_for [@list] do |f| %>
+      <%= f.input :name %>
+      <div class="d-flex justify-content-between align-items-center">
+        <%= f.submit %>
+        <%= link_to "Cancel", lists_path %>
+      </div>
+    <% end %>
+  </div>
 </div>
-
 
 
 <%# how to add movies or bookmarks when creating a list ? %>
